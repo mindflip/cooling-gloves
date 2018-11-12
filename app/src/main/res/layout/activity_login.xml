@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:layout_marginTop="151dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etEmail"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/btnSignup"
+        android:text="로그인"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/etPassword"
+        android:layout_alignTop="@+id/btnLogin"
+        android:text="회원가입"
+        android:textAllCaps="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember login"
+        android:id="@+id/checkBox"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        android:text="" />
+
+</RelativeLayout>

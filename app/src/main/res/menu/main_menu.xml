@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/login"
+        android:title="로그인"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/mypage"
+        android:title="마이페이지"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/logout"
+        android:title="로그아웃"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/controller"
+        android:title="컨트롤러"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/exerciseRegister"
+        android:title="운동정보 등록"
+        app:showAsAction="never"
+        />
+    />
+    <item
+        android:id="@+id/heartrate"
+        android:title="심박수"
+        app:showAsAction="never"
+        />
+    />
+    <item
+        android:id="@+id/temperature"
+        android:title="체온"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/bluetooth"
+        android:title="B"
+        app:showAsAction="always"/>
+</menu>
