@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             @Override
             public void onProgressChanged(Croller croller, int progress) {
                 if (mDevice != null){
+                    // removeMessages(0)의 의미 : 모든 핸들러의 큐를 제거 (onStopTrackingTouch의 이벤트 제거)
                     nHandler.removeMessages(0);
                     circularFillableLoaders.setProgress(100 - (progress * 5));
                     circularFillableLoaders.setAmplitudeRatio((float) (0.03 + progress/100));
@@ -170,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
             @Override
             public void onStopTrackingTouch(Croller croller) {
                 if (mDevice != null){
+                    // 별 다른 동작이 없을 시 TextView에 On이라는 글자 나타나도록 (cooling on)
                     nHandler.postDelayed(new Runnable()
                     {
                         @Override
